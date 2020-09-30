@@ -4,44 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Template</title>
-
+    
     <!--- css link---->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all"> -->
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hover-min.css">
-    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/mystyle.css">
 
 </head>
 <body>
     <div class="container">
+        <!--Start header area-->
         <div class="headerarea">
-            <div class="row bg-info py-3">
-                <div class="col-md-3 text-center">
-                    <a  href="mailto:esmail4647@gmail.com"><i class="material-icons md-light">face</i> esmail4647@gmail.com</a>
+            <div class="row bg-info py-2">
+                <div class="col-md-3 text-center header">
+                    <a  class="text-white py-2" href="mailto:esmail4647@gmail.com"><i class="fa fa-envelope"></i>esmail4647@gmail.com</a>
                 </div>
-                <div class="col-md-4 text-left">
-                    <a href="#">+8801746478309</a>
+                <div class="col-md-4 text-left header">
+                    <a class="text-white py-2" href="#"><i class="fa fa-phone-volume"></i>+8801746478309</a>
                 </div>
-                <div class="col-md-5 text-center">
-                    <button class="btn btn-ms btn-warning">Quotes</button>
+                <div class="col-md-5 text-right ">
+                    <button class="btn btn-sm btn-warning" >Quotes</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#ModalCenter">Login </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success blue-gradient">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Login Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <p>HI! I am modal.</p>
+                            </div>
+                            <div class="modal-footer bg-info">
+                            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-lg btn-primary">Login</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="contenarea"></div>
-        <div class="footerarea"></div>
-    </div>
+            </div><!--row-->
+            <div class="row py-3 text-left">
+                <div class="col-md-6">
+                    <h2>ItZoneBD</h2>
+                    <p>Software Bangladesh</p>
+                </div>
+                <div class="col-md-6 text-right social">
+                    <a href="">Facebook</a>
+                    <a href="">Linkedin</a>
+                    <a href="">Instagram</a>
+                    <a href="">Youtube</a>
+                </div>
+            </div><!--row-->
+
+            <div class="row ">
+                <div class="col-md-12">
+                    <!--Navbar-->
+                    <nav class="navbar navbar-expand-lg navbar-dark primary-color" id="navbar_top">
+                        <!-- Navbar brand -->
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>              
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                        </div>
+                        <!-- Collapsible content -->
+                    </nav>
+                    <!--/.Navbar-->
+                </div>
+            </div><!--row-->
+        </div><!--headerarea-->
+
+        <!--End header area-->
+
+        <!--Start content area-->
+        <div class="contenarea">
+            <div class="row">
+                <div class="col-md-12">
+                  <div style="height: 100vh">
+                    <div class="flex-center flex-column">
+                      <h1 class="text-hide animated fadeIn mb-4" >Contact Us</h1>
+                    <address><span>123, Wirlessgate, Mohakhali, Dhaka.</span><p></p></address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div><!--contentarea-->
+
+        <!--End content area-->
+
+        <!--Start footer area-->
+        <div class="footerarea">
+            <footer class="page-footer font-small green darken-2 pt-4">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center green darken-4 py-3">© 2020 Copyright:
+                <a href="https://itzonebd.com/"> ItZoneBD.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>   
+        </div><!--footerarea-->
+        <!--End footer area-->
+    </div><!--container-->
 
 
     <!--js link-->
     <script src="js/jQuery3.5.1.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/mdb.min.js"></script>
+   
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script type="text/javascript">
+        if ($(window).width() > 992) {
+          $(window).scroll(function(){  
+            if ($(this).scrollTop() > 40) {
+                $('#navbar_top').addClass("fixed-top");
+                // add padding top to show content behind navbar
+                $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+              }else{
+                $('#navbar_top').removeClass("fixed-top");
+                // remove padding top from body
+                $('body').css('padding-top', '0');
+              }   
+          });
+        } // 
+      </script>
 </body>
 </html>

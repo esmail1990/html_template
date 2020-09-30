@@ -1,0 +1,12 @@
+.header{
+    padding: 5px;
+    color: white !important;
+}
+.header a:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+.social a{
+    padding-left: 30px;
+    color: rgb(156, 216, 17);
+}

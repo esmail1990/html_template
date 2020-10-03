@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-size: 13px;
 }
@@ -32,84 +36,42 @@ body{
     transition: 0.5s;
     border-radius: 5px;
 }
-/* menubar css*/
-
-#menu, #menu ul{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+/* menu-bar css*/
+.menu-bar{
+    background: rgb(0,100,0);
+    text-align: center;
+    
 }
-#menu{
-    width: 100%;
-    margin: 50px auto;
-    background-color: #E04818;
-    border-radius: 6px;
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #ffffff;
+    
 }
-#menu:before, #menu::after{
-    content: '';
-    display: table;
+.menu-bar ul li{
+    width: 120px;
+   margin: 10px;
+   margin-bottom: 0px;
+   padding: 5px;
 }
-#menu::after{
-    clear: both;
-}
-#menu ul li{
-    float: left;
-    box-shadow: 1px 0 0 #444;
-    position: relative;
-}
-#menu a {
-    float: left;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    font-family: Baloo;
+.menu-bar ul li a{
     text-decoration: none;
-    color: #fff;
-}
-
-#menu li:hover > a {
-    color: #fafafa;
-    background: #262626;
-} 
-#menu ul li> ul{
-    margin: 20px 0 0 0;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 46px;
-    left: 0;
-    z-index: 1;
-    background: #262626;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
-}
-#menu ul li:hover > ul{
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-#menu ul li> ul li>ul {
-    top: 10px;
-    left: 160px;
-    margin: 0 0 0 20px;
-}
-#menu ul li> ul li> ul li{
-    float:none;
-    display: block;
-    border: 0;
-    box-shadow: 0 1px 0 #111 0 2px 0 #666;
-}
-#menu ul li:last-child{
-    box-shadow: none;
-}
-#menu ul li> ul li> ul li a{
-    padding: 10px;
-    width: 130px;
-    display: block;
-    white-space: nowrap;
+    color: #ffffff;
+    font-size: 13px;
     text-transform: uppercase;
+ }
+.active, .menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+    font-size: 13px;
 }
 
-/* navbar css*/
+/*https://www.youtube.com/watch?v=wHFflWvii3M*/
+
+/* menu-bar css*/
 
 
 

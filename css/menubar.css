@@ -2,7 +2,7 @@ body {margin:0;font-family:Arial}
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background: rgb(0,100,0);
 }
 
 .topnav a {
@@ -11,7 +11,7 @@ body {margin:0;font-family:Arial}
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 17px;
 }
 
@@ -24,12 +24,12 @@ body {margin:0;font-family:Arial}
   display: none;
 }
 
-.dropdown {
+.dropdown-1 {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown-1 .dropbtn {
   font-size: 17px;    
   border: none;
   outline: none;
@@ -38,6 +38,7 @@ body {margin:0;font-family:Arial}
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+ 
 }
 
 .dropdown-content {
@@ -45,7 +46,7 @@ body {margin:0;font-family:Arial}
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(3, 138, 37, 0.555));
   z-index: 1;
 }
 
@@ -58,8 +59,8 @@ body {margin:0;font-family:Arial}
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+.topnav a:hover, .dropdown-1:hover .dropbtn {
+  background-color: rgba(7, 250, 68, 0.692);
   color: white;
   -webkit-transition: opacity 2s ease-in;
   -moz-transition: opacity 2s ease-in;
@@ -69,12 +70,12 @@ body {margin:0;font-family:Arial}
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background: rgb(0,100,0);
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-1:hover .dropdown-content {
   display: block;
   -webkit-transition: opacity 2s ease-in;
   -moz-transition: opacity 2s ease-in;
@@ -84,7 +85,7 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child), .dropdown-1 .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -106,9 +107,9 @@ body {margin:0;font-family:Arial}
     text-align: left;
     transition: 0.5s;
   }
-  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-1 {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive .dropdown-1 .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
